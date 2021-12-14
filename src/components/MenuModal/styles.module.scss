@@ -1,0 +1,39 @@
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul{
+        background-color: var(--blue-100);
+        width: 60%;
+        height: 60%;
+        border-radius: 5px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        li{
+            padding: 1em;
+
+            color: #FFF;
+            font-weight: bold;
+            font-size: 1.5em;
+
+            a{
+                font-size: 1em;
+                color: #FFF;
+                font-weight: normal;
+            }
+        }
+    }
+}

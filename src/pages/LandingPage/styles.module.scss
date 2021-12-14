@@ -1,0 +1,174 @@
+.dashboard {
+    width: 100%;
+    height: 100%;
+
+    .cards {
+        .dashChart {
+            margin-top: 1em;
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+
+            .resume {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                margin-top: 1em;
+                margin-bottom: 1em;
+
+                span {
+                    width: 50%;
+                    padding: 0.5em;
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    p {
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+        }
+
+        .worries {
+            width: 100%;
+            height: 100%;
+            margin-top: 1em;
+            background-color: #fff;
+
+            .worriesDiv {
+                width: 100%;
+                height: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 1em;
+
+                h1 {
+                    color: var(--blue-100);
+                    margin-bottom: 0.5em;
+                }
+
+                .cardWorrie {
+                    width: 100%;
+                    height: 100%;
+
+                    span {
+                        background-color: rgba(255, 165, 0, 0.25);
+                        margin-bottom: 1em;
+                        border-radius: 5px;
+
+                        width: 100%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        svg {
+                            width: 20%;
+                            height: 20%;
+                        }
+
+                        div {
+                            width: 100%;
+
+                            h1 {
+                                font-size: 1.5em;
+                                color: #000;
+                            }
+
+                            h1,
+                            p {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .navButton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
+            height: 10vh;
+            margin-bottom: 1em;
+
+            background-color: var(--green);
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .dashboard {
+        .cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .dashChart{
+
+                width: 90%;
+
+                .chart{
+                    width: 100%;
+                }
+                .resume{
+                    flex-direction: row;
+                    justify-content: space-around;
+                    span{
+                        width:100%;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .worries{
+                width: 90%;
+
+                .worriesDiv{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .cardWorrie{
+                        width: 90%;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        padding: 1em;
+
+                        span{
+                            width: 95%;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            svg{
+                                width: 35%;
+                                height: 35%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navButton{
+                width: 90%;
+            }
+        }
+    }
+}

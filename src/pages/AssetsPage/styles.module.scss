@@ -1,0 +1,130 @@
+.assetsPage{
+    width: 100%;
+    height: 100%;
+
+    .cards{
+        width: 100%;
+        height: 100%;
+
+        .chartCard{
+            margin-top: 2em;
+        }
+      
+        .assetCard{
+            width: 100%;
+            background-color: #FFF;
+            margin-top: 2em;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .divSelect{
+                width: 100%;
+                margin: 1em 0 1em 0; 
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+                h1{
+                    color: var(--blue-100);
+                    margin-bottom: 0.5em;
+                }
+
+                form{
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    select{
+                        padding: 0.8em;
+                        width: 90%;
+
+                        background-color: #FFF;
+                        border: none;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            .divAsset{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+                .asset{
+                    background-color: #DCDCDC;
+                    border-radius: 5px;
+
+                    padding: 1em;
+                    margin-top: 1em;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 90%;
+                    height: 100%;
+
+                    img{
+                        width: 50%;
+                        height: 50%;
+                    }
+
+                    div{
+                        margin-top: 1em;
+                    }
+
+                    &:last-child{
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media(min-width: 1025px){
+    .assetsPage{
+        .cards{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .chartCard{
+                width: 90%;
+            }
+
+            .assetCard{
+                width: 90%;
+
+                .divAsset{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    justify-items: center;
+                    align-items: center;
+
+                    .asset{
+                        padding: 2em;
+                        width: 50%;
+                        height: 90%;
+
+                        img{
+                            width: 60%;
+                            height: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
