@@ -6,7 +6,13 @@ Reactian é uma aplicação web que tem como objetivo ajudar pessoas a gerenciar
 
 ```console
 git clone https://github.com/caiokronuz/reactian.git
+```
+```console
 cd reactian/
+```
+```console
 npm i
+```
+```console
 npm run start 
 ```
